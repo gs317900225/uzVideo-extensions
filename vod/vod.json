@@ -301,9 +301,9 @@
         "name": "MISSAV",
         "api": "https://gh-proxy.com/https://raw.githubusercontent.com/gs317900225/uzVideo-extensions/refs/heads/main/vod/js/missav.js",
         "instance": "missav20240627",
-        "webSite": "https://missav.com",
+        "webSite": "https://missav.ai",
         "remark": "",
-        "version": "2",
+        "version": "3",
         "type": 100
     },
     {
@@ -336,10 +336,9 @@
     {
         "name": "91jav",
         "api": "https://gh-proxy.com/https://raw.githubusercontent.com/gs317900225/uzVideo-extensions/refs/heads/main/vod/js/91jav.js",
-        "instance": "jav9120241127",
         "webSite": "https://041.bndmpsjx.com",
         "remark": "",
-        "version": "2",
-        "type": 100
+        "version": "3",
+        "type": 101
     }
 ]
