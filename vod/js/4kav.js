@@ -1,3 +1,10 @@
+//@name:4k-av
+//@version:2
+//@webSite:https://4k-av.com
+//@remark:
+//@type:100
+//@instance:www4kav20240705
+
 // ignore
 import {} from '../../core/uzVideo.js'
 import {} from '../../core/uzHome.js'

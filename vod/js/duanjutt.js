@@ -1,4 +1,11 @@
 // ignore
+//@name:短剧天堂
+//@version:2
+//@webSite:https://duanjutt.tv
+//@remark:
+//@type:100
+//@instance:duanjutt20240922
+
 import {} from '../../core/uzVideo.js'
 import {} from '../../core/uzHome.js'
 import {} from '../../core/uz3lib.js'

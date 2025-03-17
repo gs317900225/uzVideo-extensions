@@ -1,3 +1,7 @@
+//@name:至臻盘
+//@version:3
+//@webSite:https://mihdr.top
+//@remark:
 const appConfig = {
     _webSite: 'https://mihdr.top',
     /**

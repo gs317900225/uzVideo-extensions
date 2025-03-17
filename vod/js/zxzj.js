@@ -1,4 +1,10 @@
 // ignore
+//@name:在线之家
+//@version:2
+//@webSite:https://www.zxzja.com
+//@remark:
+//@type:100
+//@instance:zxzj20240620
 import { } from '../../core/uzVideo.js'
 import { } from '../../core/uzHome.js'
 import { } from '../../core/uz3lib.js'

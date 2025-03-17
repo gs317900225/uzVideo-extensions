@@ -1,4 +1,12 @@
 // ignore
+//@name:missav
+//@version:2
+//@webSite:https://missav.ai
+//@remark:
+//@type:100
+//@instance:missav20240627
+//@isAV:1
+
 import { } from '../../core/uzVideo.js'
 import { } from '../../core/uzHome.js'
 import { } from '../../core/uz3lib.js'

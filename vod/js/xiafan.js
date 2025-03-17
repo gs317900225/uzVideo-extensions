@@ -1,3 +1,7 @@
+//@name:特下饭
+//@version:1
+//@webSite:http://www.xn--ghqy10g1w0a.xyz/
+//@remark:
 const appConfig = {
     _webSite: 'http://www.xn--ghqy10g1w0a.xyz/',
     /**

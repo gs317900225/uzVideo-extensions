@@ -1,3 +1,11 @@
+//@name:netflav
+//@version:2
+//@webSite:https://www.netflav.com
+//@remark:
+//@type:100
+//@instance:netflav20240905
+//@isAV:1
+
 class netflavClass extends WebApiBase {
     constructor() {
         super()

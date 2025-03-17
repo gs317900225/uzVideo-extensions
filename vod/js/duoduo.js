@@ -1,3 +1,7 @@
+//@version:3
+//@name:多多盘
+//@webSite:https://tv.yydsys.top
+//@remark:
 const appConfig = {
     _webSite: 'https://tv.yydsys.top',
     /**

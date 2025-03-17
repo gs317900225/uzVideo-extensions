@@ -1,3 +1,7 @@
+//@name:玩偶哥哥
+//@version:3
+//@webSite:http://wogg.xxooo.cf
+//@remark:
 const appConfig = {
     _webSite: 'http://wogg.xxooo.cf',
     /**

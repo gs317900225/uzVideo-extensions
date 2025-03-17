@@ -19,70 +19,33 @@ https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-exten
 无代理
 https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/refs/heads/main/uzAio_raw.json
 
-直连(非官方) 
-https://gitee.com/woleigedouer/uzVideo-extensions/raw/main/uzAio_gitee.json
 
 # 添加方式
 
 uz 影视 -> 设置 -> 数据管理 -> 订阅 -> + -> 输入链接 -> 确定
 
-
-# json 格式
-
+# 请为扩展添加以下注释，用于自动更新 json
 ```
-{
-    "recommend": [
-        {
-            "name": "名称",
-            "codeID": "如果选择了加密请填写，由 uz 生成",
-            "url": "扩展链接",
-            "remark": "备注",
-            "env":"",//环境变量名称1##环境变量描述1&&环境变量名称2##环境变量描述2
-            "version": 1, //扩展版本号
-            "type": 200 //推荐首页扩展固定 200
-        }
-    ],
-    "panTools": [
-        {
-            "name": "名称",
-            "codeID": "如果选择了加密请填写，由 uz 生成",
-            "url": "扩展链接",
-            "remark": "备注",
-            "env":"",//环境变量名称1##环境变量描述1&&环境变量名称2##环境变量描述2
-            "version": 1, //扩展版本号
-            "type": 300 //网盘工具扩展固定 300
-        }
-    ],
-    "danMu": [
-        {
-            "name": "名称",
-            "codeID": "如果选择了加密请填写，由 uz 生成",
-            "url": "扩展链接",
-            "remark": "备注",
-            "env":"",//环境变量名称1##环境变量描述1&&环境变量名称2##环境变量描述2
-            "version": 1, //扩展版本号
-            "type": 400 //弹幕扩展固定 400
-        }
-    ],
-    "live": [
-        {
-            "name": "名称",
-            "url": "直播源链接 m3u 或 txt 格式",
-            "remark": "备注",
-            "type": 10 //直播源固定 10
-        }
-    ],
-    "vod": [
-        {
-            "name": "名称",
-            "codeID": "如果选择了加密请填写，由 uz 生成",
-            "url": "扩展链接",
-            "remark": "备注",
-            "env":"",//环境变量名称1##环境变量描述1&&环境变量名称2##环境变量描述2
-            "version": 1, //扩展版本号
-            "type": 101 //视频源扩展固定 101
-        }
-    ]
-}
+// 如果扩展加密了要用成对的 //空格ignore 包裹
+
+// ignore
+
+//@name:扩展名称
+// 网站主页，只有视频源扩展需要
+//@webSite:网站主页
+// 版本号纯数字
+//@version:1
+// 备注，没有的话就不填
+//@remark:这是备注
+// 加密 id，没有的话就不填
+//@codeID:
+// 使用的环境变量，没有的话就不填
+//@env:
+// 是否是AV 1是  0否
+//@isAV:0
+//是否弃用 1是  0否
+//@deprecated:0
+
+// ignore
 
 ```

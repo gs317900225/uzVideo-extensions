@@ -1,3 +1,7 @@
+//@name:蜡笔盘
+//@version:3
+//@webSite:https://duopan.fun
+//@remark:
 const appConfig = {
     _webSite: 'https://duopan.fun',
     /**

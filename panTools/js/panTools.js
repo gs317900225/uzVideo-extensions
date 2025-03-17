@@ -1,4 +1,8 @@
 // ignore
+//@name:UC、夸克、阿里 网盘解析工具
+//@version:14
+//@remark:iOS14 以上版本可用
+//@env:UCCookie##用于播放UC网盘视频&&夸克Cookie##用于播放Quark网盘视频&&阿里Token##用于播放阿里网盘视频&&转存文件夹名称##在各网盘转存文件时使用的文件夹名称
 import {} from '../../core/uzVideo.js'
 import {} from '../../core/uzHome.js'
 import {} from '../../core/uz3lib.js'
@@ -903,7 +907,7 @@ class Ali {
         if (!this.oauth.access_token || !this.verifyTimestamp(this.oauth.expire_time)) {
             try {
                 const openToken = this.oauth.token || (await this.getOpenToken())
-                const openResp = await req('https://api-cf.nn.ci/alist/ali_open/token', {
+                const openResp = await req('https://api.nn.ci/alist/ali_open/token', {
                     method: 'post',
                     headers: this.baseHeaders,
                     data: {
@@ -926,7 +930,7 @@ class Ali {
     async getOpenToken() {
         try {
             let code = await this.getOpenCode()
-            let openResp = await req('https://api-cf.nn.ci/alist/ali_open/code', {
+            let openResp = await req('https://api.nn.ci/alist/ali_open/code', {
                 method: 'post',
                 headers: this.baseHeaders,
                 data: {

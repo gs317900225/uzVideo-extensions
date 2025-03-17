@@ -1,4 +1,11 @@
 // ignore
+//@name:玩偶姐姐
+//@version:2
+//@webSite:https://hongkongdollvideo.com
+//@remark:
+//@type:100
+//@instance:hkdoll20240705
+//@isAV:1
 import {} from '../../core/uzVideo.js'
 import {} from '../../core/uzHome.js'
 import {} from '../../core/uz3lib.js'

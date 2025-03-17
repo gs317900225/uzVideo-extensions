@@ -1,4 +1,11 @@
 // ignore
+//@name:麻豆
+//@version:2
+//@webSite:https://madou.club
+//@remark:
+//@type:100
+//@instance:madou20240626
+//@isAV:1
 import { } from '../../core/uzVideo.js'
 import { } from '../../core/uzHome.js'
 import { } from '../../core/uz3lib.js'
