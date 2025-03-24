@@ -1,28 +1,5 @@
 [
   {
-    "name": "91jav",
-    "version": 3,
-    "webSite": "https://041.bndmpsjx.com",
-    "api": "https://raw.githubusercontent.com/gs317900225/uzVideo-extensions/main/vod/js/91jav.js",
-    "type": 101
-  },
-  {
-    "name": "玩偶姐姐",
-    "version": 2,
-    "webSite": "https://hongkongdollvideo.com",
-    "instance": "hkdoll20240705",
-    "api": "https://raw.githubusercontent.com/gs317900225/uzVideo-extensions/main/vod/js/hkdoll.js",
-    "type": 100
-  },
-  {
-    "name": "jable",
-    "version": 3,
-    "webSite": "https://jable.tv",
-    "instance": "jable20240831",
-    "api": "https://raw.githubusercontent.com/gs317900225/uzVideo-extensions/main/vod/js/jable.js",
-    "type": 100
-  },
-  {
     "name": "麻豆",
     "version": 2,
     "webSite": "https://madou.club",
@@ -45,5 +22,28 @@
     "instance": "netflav20240905",
     "api": "https://raw.githubusercontent.com/gs317900225/uzVideo-extensions/main/vod/js/netflav.js",
     "type": 100
+  },
+  {
+    "name": "玩偶姐姐",
+    "version": 2,
+    "webSite": "https://hongkongdollvideo.com",
+    "instance": "hkdoll20240705",
+    "api": "https://raw.githubusercontent.com/gs317900225/uzVideo-extensions/main/vod/js/hkdoll.js",
+    "type": 100
+  },
+  {
+    "name": "jable",
+    "version": 3,
+    "webSite": "https://jable.tv",
+    "instance": "jable20240831",
+    "api": "https://raw.githubusercontent.com/gs317900225/uzVideo-extensions/main/vod/js/jable.js",
+    "type": 100
+  },
+  {
+    "name": "91jav",
+    "version": 3,
+    "webSite": "https://041.bndmpsjx.com",
+    "api": "https://raw.githubusercontent.com/gs317900225/uzVideo-extensions/main/vod/js/91jav.js",
+    "type": 101
   }
 ]
