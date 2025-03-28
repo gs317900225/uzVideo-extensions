@@ -7,7 +7,7 @@ import { createBuffer } from './buffer.js'
 import { node_html_parser } from './node-html-parser.js'
 // ignore
 
-// 推荐优先使用 cheerio, parse 后期可能会移除
+// 推荐优先使用 cheerio, parse 后期可能会移�?
 const parse = node_html_parser.parse
 
 const cheerio = createCheerio()
@@ -28,3 +28,5 @@ const Buffer = BufferLib.Buffer
 // ignore
 export { cheerio, Crypto, Encrypt, JSONbig, Buffer }
 // ignore
+
+

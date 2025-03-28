@@ -1,5 +1,5 @@
 // ignore
-//@name:云盘资源网
+//@name:云盘资源�?
 //@version:1
 //@webSite:https://res.yunpan.win
 //@remark:
@@ -11,14 +11,14 @@ import {} from '../../core/uz3lib.js'
 import {} from '../../core/uzUtils.js'
 // ignore
 
-// 类名要特殊
+// 类名要特�?
 class ResYunPan extends WebApiBase {
     constructor() {
         super()
         this.webSite = 'https://res.yunpan.win'
     }
     /**
-     * 异步获取分类列表的方法。
+     * 异步获取分类列表的方法�?
      * @param {UZArgs} args
      * @returns {Promise<RepVideoClassList>}
      */
@@ -92,9 +92,9 @@ class ResYunPan extends WebApiBase {
                 let vodDetail = new VideoDetail()
                 vodDetail.vod_content = $('p.card-text').first().text().trim()
                 const panUrls = []
-                const onclickAttr = $('a.card-link.float-end').attr('onclick') // 获取 onclick 属性内容
-                // 使用正则解析出 window.open 的链接
-                const match = onclickAttr.match(/window\.open\('([^']+)'\)/) // 正则匹配单引号内的链接
+                const onclickAttr = $('a.card-link.float-end').attr('onclick') // 获取 onclick 属性内�?
+                // 使用正则解析�?window.open 的链�?
+                const match = onclickAttr.match(/window\.open\('([^']+)'\)/) // 正则匹配单引号内的链�?
                 const link = match ? match[1] : null // 提取链接
                 panUrls.push(link)
                 vodDetail.panUrls = panUrls
@@ -158,5 +158,7 @@ class ResYunPan extends WebApiBase {
     }
 }
 
-// json 中 instance 的值，这个名称一定要特殊
+// json �?instance 的值，这个名称一定要特殊
 var resYunPan20241120 = new ResYunPan()
+
+

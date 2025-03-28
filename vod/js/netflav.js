@@ -222,7 +222,7 @@ class netflavClass extends WebApiBase {
                 let jsonData = execute()
                 backData.data = jsonData.file
             } else {
-                backData.error = '@ykusu叫他寫'
+                backData.error = '@ykusu叫他�?
             }
         } catch (e) {
             backData.error = e.message
@@ -263,3 +263,5 @@ class netflavClass extends WebApiBase {
     }
 }
 let netflav20240905 = new netflavClass()
+
+
