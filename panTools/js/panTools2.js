@@ -1,7 +1,7 @@
 //@name:夸克|123|189|UC 网盘解析工具
 //@version:17
 //@remark:iOS14 以上版本可用,App v1.6.54 及以上版本可用
-//@env:UCCookie##用于播放UC网盘视频&&UC_UT##自动获取，不可用时点击删除再重启app&&夸克Cookie##用于播放Quark网盘视频&&阿里Token##用于播放阿里网盘视频&&转存文件夹名称##在各网盘转存文件时使用的文件夹名称&&123网盘账号##用于播放123网盘视频&&123网盘密码##用于播放123网盘视频&&天翼网盘账号##用于播放天翼网盘视频&&天翼网盘密码##用于播放天翼网盘视频
+//@env:UCCookie##用于播放UC网盘视频&&UC_UT##播放视频自动获取，不可用时点击删除重新获取 cookie ，再重启app&&夸克Cookie##用于播放Quark网盘视频&&阿里Token##用于播放阿里网盘视频&&转存文件夹名称##在各网盘转存文件时使用的文件夹名称&&123网盘账号##用于播放123网盘视频&&123网盘密码##用于播放123网盘视频&&天翼网盘账号##用于播放天翼网盘视频&&天翼网盘密码##用于播放天翼网盘视频
 // ignore
 import {
     FilterLabel,
@@ -2284,9 +2284,8 @@ class Pan189 {
                             }
                         })
                     )
-                } else {
-                    file['root'] = await this.getShareFile(fileId)
                 }
+                file['root'] = await this.getShareFile(fileId)
             }
             // 过滤掉空数组
             for (let key in file) {
@@ -2457,9 +2456,9 @@ class Pan189 {
         } catch (e) {}
     }
 
-    async getShareFile(fileId) {
+    async getShareFile(fileId, pageNum = 1, retry = 0) {
         try {
-            if (!fileId) {
+            if (!fileId || retry > 3) {
                 return null
             }
             const headers = {
@@ -2473,10 +2472,10 @@ class Pan189 {
                 headers: headers,
                 responseType: ReqResponseType.plain,
             }
-
+            const pageSize = 60
             const url = `${
                 this.api
-            }/open/share/listShareDir.action?key=noCache&pageNum=1&pageSize=60&fileId=${fileId}&shareDirFileId=${fileId}&isFolder=${
+            }/open/share/listShareDir.action?key=noCache&pageNum=${pageNum}&pageSize=${pageSize}&fileId=${fileId}&shareDirFileId=${fileId}&isFolder=${
                 this.isFolder
             }&shareId=${this.shareId}&shareMode=${
                 this.shareMode
@@ -2487,7 +2486,7 @@ class Pan189 {
             let resp = await req(url, options)
 
             if (resp.code !== 200) {
-                return null
+                return await this.getShareFile(fileId, pageNum, retry + 1)
             }
 
             let json = JSONbig.parse(resp.data ?? '')
@@ -2507,6 +2506,13 @@ class Pan189 {
                         shareId: this.shareId,
                         size: element.size,
                     })
+                }
+            }
+            const totalCount = data?.count ?? 0
+            if (totalCount > pageSize * pageNum) {
+                let result = await this.getShareFile(fileId, pageNum + 1)
+                if (result) {
+                    videos = [...videos, ...result]
                 }
             }
             return videos
