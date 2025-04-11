@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const child_process = require('child_process');
 const archiver = require('archiver');
@@ -15,6 +15,20 @@ const TYPE_MAPPING = {
 
 
 const kLocalPathTAG = "_localPathTAG_"
+
+const getRepoInfo = () => {
+  if (process.env.GITHUB_REPOSITORY) {
+    return process.env.GITHUB_REPOSITORY.split('/');
+  }
+  try {
+    const gitUrl = child_process.execSync('git config --get remote.origin.url').toString().trim();
+    const matches = gitUrl.match(/github\.com[:/](.+?)\/(.+?)(\.git)?$/);
+    if (!matches) throw new Error('无法解析Git远程URL');
+    return [matches[1], matches[2]];
+  } catch (error) {
+    throw new Error('获取仓库信息失败: ' + error.message);
+  }
+}
 
 const parseComments = (filePath) => {
   const content = fs.readFileSync(filePath, 'utf8');
@@ -42,19 +56,6 @@ const parseComments = (filePath) => {
   }
   // 获取当前分支名称，默认为 main
   const branch = process.env.GITHUB_REF ? process.env.GITHUB_REF.replace('refs/heads/', '') : 'main';
-  function getRepoInfo() {
-    if (process.env.GITHUB_REPOSITORY) {
-      return process.env.GITHUB_REPOSITORY.split('/');
-    }
-    try {
-      const gitUrl = child_process.execSync('git config --get remote.origin.url').toString().trim();
-      const matches = gitUrl.match(/github\.com[:\/](.+?)\/(.+?)(\.git)?$/);
-      if (!matches) throw new Error('无法解析Git远程URL');
-      return [matches[1], matches[2]];
-    } catch (error) {
-      throw new Error('获取仓库信息失败: ' + error.message);
-    }
-  }
   const [owner, repo] = getRepoInfo();
   metadata.api = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${kLocalPathTAG}${relativePath}`;
   return metadata;
@@ -244,6 +245,20 @@ const main = async () => {
     throw err;
   }
 
+  // await updateMarkdownFiles();
+}
+
+const updateMarkdownFiles = async () => {
+
+  const mdFiles = fs.readdirSync('.').filter(file => file.endsWith('.md'));
+  const [owner, repo] = getRepoInfo();
+  mdFiles.forEach(file => {
+    const content = fs.readFileSync(file, 'utf8');
+    // TODO: 提交会被覆盖
+    // 将所有的 gs317900225/uzVideo-extensions 替换为  owner/repo
+    const newContent = content.replaceAll(/gs317900225\/uzVideo-extensions/g, `${owner}/${repo}`);
+    fs.writeFileSync(file, newContent);
+  });
 };
 
 main();
