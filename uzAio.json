@@ -38,9 +38,9 @@
   "vod": [
     {
       "name": "[解]通用官方采集",
-      "version": 2,
+      "version": 3,
       "remark": "官方采集扩展，需配合网盘解析工具使用。如采集服务不可用，请自行寻找更换采集地址。",
-      "webSite": "https://zy.hls.one/api.php/provide/vod",
+      "webSite": "http://zy.xiaomaomi.cc/api.php/provide/vod/",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/gs317900225/uzVideo-extensions/main/vod/js/cms.js",
       "type": 101
     },
@@ -143,9 +143,11 @@
     },
     {
       "name": "[直]囧次元",
-      "version": 1,
-      "webSite": "http://yhhy.zshtys888.com",
-      "codeID": "KwdXRAgsew9EnmShYGEAl3nnHnhyDjgp",
+      "version": 2,
+      "remark": "网站填写[https://jocy.app]会自动获取最新网址，也可以在环境变量修改[囧次元更新网址]的值为1",
+      "env": "囧次元更新网址##填写1,然后在首页源列表重新切换到囧次元,可更新手动更新网址",
+      "webSite": "https://jocy.app",
+      "codeID": "cm7OBqdp0KChaJ7bg2OhuAyTgt8ufeyJ",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/gs317900225/uzVideo-extensions/main/vod/js/jocy.js",
       "type": 101
     },
