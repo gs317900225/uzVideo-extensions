@@ -3,6 +3,8 @@
 - [uzUtils.js 提供网络、存储、toast 等功能](#uzutilsjs-提供网络存储toast-等功能)
 - [视频源 type:101 扩展](#视频源-type101-扩展)
   - [模板](#模板)
+    - [视频站嗅探](#视频站嗅探)
+    - [网盘资源分享站嗅探](#网盘资源分享站嗅探)
   - [说明](#说明)
 - [uzHome(首页推荐 type:200) 扩展](#uzhome首页推荐-type200-扩展)
   - [模板](#模板-1)
@@ -59,10 +61,17 @@
 
 ## 模板
 
-1. [视频源扩展 type:101 模板](https://github.com/gs317900225/uzVideo-extensions/tree/main/core/template/vod101.js)
-2. [超简单嗅探模板 难度指数 🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/clicli.js)
-3. [简单嗅探模板 难度指数 🌟🌟🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/aggl.js)
-4. [嗅探模板 难度指数 🌟🌟🌟🌟🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/eacg2.js)
+1. [视频源扩展 type:101 空模板](https://github.com/gs317900225/uzVideo-extensions/tree/main/core/template/vod101.js)
+
+### 视频站嗅探
+
+1. [超简单嗅探模板 难度指数 🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/clicli.js)
+2. [简单嗅探模板 难度指数 🌟🌟🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/aggl.js)
+3. [嗅探模板 难度指数 🌟🌟🌟🌟🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/eacg2.js)
+
+### 网盘资源分享站嗅探
+
+1. [超简单网盘站嗅探模板 难度指数 🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/revohd.js)
 
 ## 说明
 
@@ -201,6 +210,7 @@ A[开始] --> B[uz 调用 searchDanMu 获取弹幕] --> C[结束]
 # 修改记录
 
 ### v1.6.57
+
 1. `req` 支持发送二进制数据 `options.isBinary` 前提先把 `options.data` 转换为 `number` 数组
 
 ### v1.6.55
