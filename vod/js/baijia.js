@@ -1,10 +1,12 @@
-//@name:「盘」 下饭
+// ignore
+//@name:「盘」 百家
 //@version:1
-//@webSite:http://www.xn--ghqy10g1w0a.xyz/
+//@webSite:http://cj.jiexi.news
 //@remark:
 //@order: B
+// ignore
 const appConfig = {
-    _webSite: 'http://www.xn--ghqy10g1w0a.xyz/',
+    _webSite: 'http://cj.jiexi.news',
     /**
      * 网站主页，uz 调用每个函数前都会进行赋值操作
      * 如果不想被改变 请自定义一个变量
@@ -39,32 +41,32 @@ async function getClassList(args) {
     backData.data = [
         {
             type_id: '1',
-            type_name: '下饭电影',
+            type_name: '电影',
             hasSubclass: false,
         },
         {
             type_id: '2',
-            type_name: '下饭剧集',
-            hasSubclass: false,
-        },
-        {
-            type_id: '3',
-            type_name: '下饭动漫',
+            type_name: '剧集',
             hasSubclass: false,
         },
         {
             type_id: '4',
-            type_name: '下饭综艺',
+            type_name: '动漫',
             hasSubclass: false,
         },
         {
-            type_id: '30',
-            type_name: '下饭臻彩',
+            type_id: '3',
+            type_name: '综艺',
             hasSubclass: false,
         },
         {
-            type_id: '28',
-            type_name: '下饭记录',
+            type_id: '39',
+            type_name: '臻彩',
+            hasSubclass: false,
+        },
+        {
+            type_id: '38',
+            type_name: '天翼|123',
             hasSubclass: false,
         },
     ]
