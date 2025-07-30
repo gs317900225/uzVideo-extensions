@@ -66,13 +66,13 @@
 
 ### 视频站嗅探
 
-1. [超简单嗅探模板 难度指数 🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/clicli.js)
-2. [简单嗅探模板 难度指数 🌟🌟🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/aggl.js)
-3. [嗅探模板 难度指数 🌟🌟🌟🌟🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/eacg2.js)
+1. [超简单嗅探模板 难度指数 🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/Deprecated_clicli.js)
+2. [简单嗅探模板 难度指数 🌟🌟🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/Xiu_girigirilove.js)
+3. [嗅探模板 难度指数 🌟🌟🌟🌟🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/Xiu_eacg2.js)
 
 ### 网盘资源分享站嗅探
 
-1. [超简单网盘站嗅探模板 难度指数 🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/revohd.js)
+1. [超简单网盘站嗅探模板 难度指数 🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/Deprecated_revohd.js)
 
 ## 说明
 
