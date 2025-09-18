@@ -1,4 +1,4 @@
-- [扩展说明](#扩展说明)
+﻿- [扩展说明](#扩展说明)
 - [本地开发测试](#本地开发测试)
 - [uzUtils.js 提供网络、存储、toast 等功能](#uzutilsjs-提供网络存储toast-等功能)
 - [视频源 type:101 扩展](#视频源-type101-扩展)
@@ -57,23 +57,23 @@
 3. 修改文件顶部 //@ 相关内容
 4. 右键 Debug File
 
-# [uzUtils.js 提供网络、存储、toast 等功能](https://github.com/YYDS678/uzVideo-extensions/tree/main/core/core/uzUtils.js)
+# [uzUtils.js 提供网络、存储、toast 等功能](https://github.com/gs317900225/uzVideo-extensions/tree/main/core/core/uzUtils.js)
 
 # 视频源 type:101 扩展
 
 ## 模板
 
-1. [视频源扩展 type:101 空模板](https://github.com/YYDS678/uzVideo-extensions/tree/main/core/template/vod101.js)
+1. [视频源扩展 type:101 空模板](https://github.com/gs317900225/uzVideo-extensions/tree/main/core/template/vod101.js)
 
 ### 视频站嗅探
 
-1. [超简单嗅探模板 难度指数 🌟](https://github.com/YYDS678/uzVideo-extensions/tree/main/vod/js/Deprecated_clicli.js)
-2. [简单嗅探模板 难度指数 🌟🌟🌟](https://github.com/YYDS678/uzVideo-extensions/tree/main/vod/js/Xiu_girigirilove.js)
-3. [嗅探模板 难度指数 🌟🌟🌟🌟🌟](https://github.com/YYDS678/uzVideo-extensions/tree/main/vod/js/Xiu_eacg2.js)
+1. [超简单嗅探模板 难度指数 🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/Deprecated_clicli.js)
+2. [简单嗅探模板 难度指数 🌟🌟🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/Xiu_girigirilove.js)
+3. [嗅探模板 难度指数 🌟🌟🌟🌟🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/Xiu_eacg2.js)
 
 ### 网盘资源分享站嗅探
 
-1. [超简单网盘站嗅探模板 难度指数 🌟](https://github.com/YYDS678/uzVideo-extensions/tree/main/vod/js/Deprecated_revohd.js)
+1. [超简单网盘站嗅探模板 难度指数 🌟](https://github.com/gs317900225/uzVideo-extensions/tree/main/vod/js/Deprecated_revohd.js)
 
 ## 说明
 
@@ -111,7 +111,7 @@ graph TD
 
 ## 模板
 
-[推荐页扩展 type:200 模板](https://github.com/YYDS678/uzVideo-extensions/tree/main/core/template/uzHome.js)
+[推荐页扩展 type:200 模板](https://github.com/gs317900225/uzVideo-extensions/tree/main/core/template/uzHome.js)
 
 ## 说明
 
@@ -140,7 +140,7 @@ graph TD
 
 ## 模板
 
-[网盘工具扩展 type:300 模板](https://github.com/YYDS678/uzVideo-extensions/tree/main/core/template/panTools.js)
+[网盘工具扩展 type:300 模板](https://github.com/gs317900225/uzVideo-extensions/tree/main/core/template/panTools.js)
 
 ## 说明
 
@@ -158,7 +158,7 @@ A[开始] --> B[uz 调用 getShareVideos 获取视频列表] --> C[uz 调用 get
 
 ## 模板
 
-[弹幕扩展 type:400 模板](https://github.com/YYDS678/uzVideo-extensions/tree/main/core/template/danMu.js)
+[弹幕扩展 type:400 模板](https://github.com/gs317900225/uzVideo-extensions/tree/main/core/template/danMu.js)
 
 ## 说明
 

@@ -1,20 +1,20 @@
-# uz 影视 扩展仓库
+﻿# uz 影视 扩展仓库
 
 1. 欢迎向本仓库提交适用于 uz 影视 的扩展
 2. 可以提交使用 uz 影视 加密的扩展，但不支持提交需要验证 `sid` 的扩展
 
 |                                                    模块                                                     |    功能描述     |   类型   |
 | :---------------------------------------------------------------------------------------------------------: | :-------------: | :------: |
-| **[core](https://github.com/YYDS678/uzVideo-extensions/tree/main/core#uzutilsjs-提供网络存储toast-等功能)** | uz 影视基础能力 |    -     |
-|         **[vod](https://github.com/YYDS678/uzVideo-extensions/tree/main/core#视频源-type101-扩展)**         |   视频源扩展    | type 101 |
-|  **[recommend](https://github.com/YYDS678/uzVideo-extensions/tree/main/core#uzhome首页推荐-type200-扩展)**  |  推荐首页扩展   | type 200 |
-|  **[panTools](https://github.com/YYDS678/uzVideo-extensions/tree/main/core#pantools网盘工具-type300扩展)**  |  网盘工具扩展   | type 300 |
-|      **[danMu](https://github.com/YYDS678/uzVideo-extensions/tree/main/core#danmu弹幕-type400-扩展)**       |    弹幕扩展     | type 400 |
+| **[core](https://github.com/gs317900225/uzVideo-extensions/tree/main/core#uzutilsjs-提供网络存储toast-等功能)** | uz 影视基础能力 |    -     |
+|         **[vod](https://github.com/gs317900225/uzVideo-extensions/tree/main/core#视频源-type101-扩展)**         |   视频源扩展    | type 101 |
+|  **[recommend](https://github.com/gs317900225/uzVideo-extensions/tree/main/core#uzhome首页推荐-type200-扩展)**  |  推荐首页扩展   | type 200 |
+|  **[panTools](https://github.com/gs317900225/uzVideo-extensions/tree/main/core#pantools网盘工具-type300扩展)**  |  网盘工具扩展   | type 300 |
+|      **[danMu](https://github.com/gs317900225/uzVideo-extensions/tree/main/core#danmu弹幕-type400-扩展)**       |    弹幕扩展     | type 400 |
 
 # 订阅
 
 ```
-https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/refs/heads/main/uzAio.zip
+https://raw.githubusercontent.com/gs317900225/uzVideo-extensions/refs/heads/main/uzAio.zip
 ```
 
 # 添加方式
